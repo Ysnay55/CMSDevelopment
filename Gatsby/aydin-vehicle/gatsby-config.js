@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Ysnay's Garage`,
-    description: `This is my first Headless project and the topic is Vehicles`,
-    author: `Aydin Yasin`,
+    title: `Aydin Showroom`,
+    description: `Showroom for vehciles`,
+    author: `Yasin Aydin`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,34 +28,26 @@ module.exports = {
       },
     },
     {
+      resolve:"gatsby-source-graphql",
+      options:{
+        typeName:"WPGraphql",
+        fieldName:"wpcontent",
+        url:"http://opdracht-showroom.local/graphql", // You can also use it Local url/graphql server has to run!
+      },
+    },
+    {
 
-      resolve: "gatsby-source-graphql",
+      resolve: `gatsby-plugin-google-fonts`,
       
       options: {
       
-      typeName: "WPGraphql",
+      fonts: [`Roboto`, `Oswald`],
       
-      fieldName: "wpcontent",
+      display: "swap",
       
-      url: "http://opdracht-showroom.local/graphql",
-      
-      },
-      
-      },
-      {
-
-        resolve: `gatsby-plugin-google-fonts`,
-        
-        options: {
-        
-        fonts: [`Roboto`, `Oswald`],
-        
-        display: "swap",
-        
-        },
-        
-        }, 
-        `gatsby-plugin-styled-components`
+      },  
+      }, 
+      'gatsby-plugin-styled-components',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

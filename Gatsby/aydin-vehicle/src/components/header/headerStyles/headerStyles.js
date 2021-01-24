@@ -25,6 +25,20 @@ export const HeaderWrapper = styled.header`
     justify-content: center;
   }
 
+  .HeaderTitle {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: ${COLORS.WHITE};
+    font-family: ${FONT_FAMILIES.BUTTON};
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0.25rem 1rem;
+
+  }
+
   @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
     display: none;
   }
