@@ -6,7 +6,7 @@ import SEO from "../components/Seo"
 import {
     Wrapper2,
     BottomEdgeDown,
-} from "../pages/pageStyles/pageStyles"
+} from "../pageStyles/pageStyles"
 import { COLORS } from "../constants"
 
 const ArtistTemplate = ({

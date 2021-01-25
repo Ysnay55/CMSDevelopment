@@ -7,7 +7,7 @@ import {
   Wrapper2,
   Image,
   BottomEdgeDown,
-} from "./pageStyles/pageStyles"
+} from "../pageStyles/pageStyles"
 import { COLORS } from "../constants"
 
 const IndexPage = () => {

@@ -8,7 +8,7 @@ import {
     Image,
     BottomEdgeDown,
     Artist
-} from "./pageStyles/pageStyles"
+} from "../pageStyles/pageStyles"
 import { COLORS } from "../constants"
 
 const SalesPage = () => {
