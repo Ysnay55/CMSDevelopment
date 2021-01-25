@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import {
-    Wrapper,
+    Wrapper2,
     Image,
     BottomEdgeDown,
     Artist
@@ -61,7 +61,7 @@ const SalesPage = () => {
     return (
         <Layout>
             <SEO title="Sales" />
-            <Wrapper artistsColor={COLORS.BLACK} descriptionColor={COLORS.SECONDARY}>
+            <Wrapper2 artistsColor={COLORS.BLACK} descriptionColor={COLORS.SECONDARY}>
             <div className="banner">
             <div className="inner-div">
                 <p className="header-description">{salesPageHeaderTitle}</p>
@@ -88,7 +88,7 @@ const SalesPage = () => {
                         ))}
                     </div>
                 </div>
-            </Wrapper>
+            </Wrapper2>
         </Layout>
     )
 }

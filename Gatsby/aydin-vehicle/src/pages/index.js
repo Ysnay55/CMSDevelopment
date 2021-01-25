@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import {
-  Wrapper,
+  Wrapper2,
   Image,
   BottomEdgeDown,
 } from "./pageStyles/pageStyles"
@@ -47,7 +47,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <Wrapper>
+      <Wrapper2>
         <div className="banner">
           <Image
             fluid={homePageHeaderPicture.imageFile.childImageSharp.fluid}
@@ -58,7 +58,7 @@ const IndexPage = () => {
           </div>
           <BottomEdgeDown color={COLORS.BLACK} />
         </div>
-      </Wrapper>
+      </Wrapper2>
     </Layout>
   )
 }
